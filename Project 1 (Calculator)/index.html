@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="upper">
+      <div class="row">
+        <div class="container">
+          <input class="input1" id="input1" type="text" />
+        </div>
+      </div>
+    </div>
+
+    <div class="upper">
+      <div class="down">
+        <div class="row">
+          <button onclick="addoperand('9')">9</button>
+          <button onclick="addoperand('8')">8</button>
+          <button onclick="addoperand('7')">7</button>
+          <button onclick="addoperand('6')">6</button>
+          <button onclick="addoperand('5')">5</button>
+        </div>
+
+        <div class="row">
+          <button onclick="addoperand('4')">4</button>
+          <button onclick="addoperand('3')">3</button>
+          <button onclick="addoperand('2')">2</button>
+          <button onclick="addoperand('1')">1</button>
+          <button onclick="addoperand('0')">0</button>
+        </div>
+
+        <div class="row">
+          <button onclick="addoperand('*')">*</button>
+          <button onclick="addoperand('/')">/</button>
+          <button onclick="addoperand('^')">^</button>
+          <button onclick="addoperand('+')">+</button>
+          <button onclick="addoperand('-')">-</button>
+        </div>
+
+        <div class="row">
+          <button onclick="addoperand('sin()')">Sin</button>
+          <button onclick="addoperand('cos()')">Cos</button>
+          <button onclick="addoperand('tan()')">Tan</button>
+          <button onclick="addoperand('3.142')">π</button>
+          <button onclick="addoperand('2.7182')">e</button>
+        </div>
+
+        <div class="row">
+          <button onclick="cal()">=</button>
+          <button onclick="delete_All()">Delete</button>
+          <button onclick="delete_last()">C</button>
+          <button onclick="addoperand('sqrt()')">sqrt</button>
+        </div>
+
+        <div class="row history">
+          <div id="history_content"></div>
+        </div>
+
+        <div class="variables">
+          <input type="text" id="n1" placeholder="Name" required />
+
+          <input type="number" id="v1" placeholder="Value" required />
+
+          <button onclick="varSubmit()">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
